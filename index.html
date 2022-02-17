@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Multiplayer Snake</title>
+		<style>
+#CONTAINER {
+	align-items: center;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+#CANVAS {
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+	outline: 3px double darkgray;
+}
+		</style>
+	</head>
+	<body>
+		<div id="CONTAINER">
+			<canvas id="CANVAS" width="80" height="80"></canvas>
+		</div>
+		<script src="classes-and-such.js"></script>
+		<script src="game-logic.js"></script>
+		<script src="interface.js"></script>
+	</body>
+</html>
